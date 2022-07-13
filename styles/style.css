@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+/* part 1 */
+.hw-part1 {
+  margin: 10px 0 50px;
+}
+.content {
+  font-size: 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* fist-transitiona-01 */
+.text-shadow-animation {
+  margin: 16px auto 0;
+  text-align: center;
+  color: palevioletred;
+  font-size: 32px;
+  font-weight: bold;
+  transition: text-shadow 1s;
+  transition-delay: 0.25s;
+}
+.text-shadow-animation:hover {
+  text-shadow: 2px 8px 2px rgb(238, 173, 194);
+}
+/* second-transitiona-01 */
+.block-corner-animation {
+  margin: 16px auto 0;
+  padding: 8px;
+  display: flex;
+  height: 200px;
+  width: 400px;
+  align-items: center;
+  background-color: rgb(144, 222, 241);
+  border: 8px solid transparent;
+  transition: all 1s;
+  transition-delay: 0.25s;
+}
+.block-corner-animation:hover {
+  border-radius: 150px/50px 0;
+  border: 8px solid rgb(144, 222, 241);
+  background-color: rgb(238, 173, 194);
+}
+
+/* third-transitiona-01 */
+.border-style-animation {
+  margin: 16px auto 0;
+  padding: 8px;
+  display: flex;
+  height: 200px;
+  width: 400px;
+  align-items: center;
+  background-color: rgb(192, 150, 235);
+  border: 8px solid transparent;
+  transition: all 1s;
+  transition-delay: 0.25s;
+}
+.border-style-animation:hover {
+  background-color: rgb(199, 149, 165);
+  border-top: 8px solid rebeccapurple;
+  border-right: 8px solid rgb(129, 108, 148);
+  border-bottom: 8px solid rgb(129, 108, 148);
+  border-left: 8px solid rebeccapurple;
+}
+/* forth-transitiona-01 */
+.outline-style-animation {
+  margin: 16px auto 0;
+  padding: 8px;
+  display: flex;
+  height: 200px;
+  width: 400px;
+  align-items: center;
+  background-color: #e7cf8c;
+  border: 8px solid #d3b86d;
+  transition: all 1s;
+  transition-delay: 0.25s;
+}
+.outline-style-animation:hover {
+  outline: 4px solid rgb(158, 123, 57);
+  outline-offset: 6px;
+}
+/* fifth-transitiona-01 */
+.container-sizing {
+  margin: 0 auto;
+  height: 250px;
+  width: 450px;
+}
+.size-style-animation {
+  margin: 16px auto 0;
+  padding: 8px;
+  display: flex;
+  height: 200px;
+  width: 400px;
+  align-items: center;
+  background-color: rgb(127, 127, 247);
+  transition: all 1s;
+  transition-delay: 0.25s;
+}
+.size-style-animation:hover {
+  height: 150px;
+  width: 500px;
+  box-shadow: 0 8px 10px gray;
+}
+/* part 2 */
+.hw-part2 {
+  margin: 10px 0 50px;
+  position: relative;
+}
+
+.red {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: all 1s;
+  transition-delay: 0.25s;
+  transform-origin: top left;
+}
+.colored-block:hover .red {
+  transform: rotate(90deg);
+}
+.green {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: relative;
+  left: 100px;
+  bottom: 100px;
+  transition: all 1s;
+  transition-delay: 0.25s;
+  transform-origin: top right;
+}
+.colored-block:hover .green {
+  transform: rotate(-90deg);
+}
+.yellow {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: relative;
+  bottom: 100px;
+  transition: all 1s;
+  transition-delay: 0.25s;
+  transform-origin: bottom left;
+}
+.colored-block:hover .yellow {
+  transform: rotate(-90deg);
+}
+.blue {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  left: 100px;
+  bottom: 200px;
+  transition: all 1s;
+  transition-delay: 0.25s;
+  transform-origin: bottom right;
+}
+.colored-block:hover .blue {
+  transform: rotate(90deg);
+}
+.greeting {
+  margin-bottom: 150px;
+  padding-top: 85px;
+  text-align: center;
+  font-size: 32px;
+}
+.colored-block {
+  position: absolute;
+  top: 0;
+  right: 95px;
+  left: 0;
+  bottom: 0;
+}
+
+/* part 3 */
+.hw-part3 {
+  margin: 10px auto 50px;
+  height: 100px;
+  width: 400px;
+}
+.text-animation {
+  margin: 0;
+  font-size: 32px;
+  color: rgb(105, 202, 209);
+  text-align: center;
+  animation-name: bouncing-text;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.68, -0.65, 0.365, 1.55);
+  animation-iteration-count: infinite;
+}
+@keyframes bouncing-text {
+  0% {
+    font-size: 0px;
+  }
+  50% {
+    font-size: 50px;
+  }
+  100% {
+    font-size: 32px;
+  }
+}
+/* part 4 */
+.hw-part4 {
+  position: relative;
+  margin: 10px auto 50px;
+  height: 200px;
+  width: 200px;
+}
+.big-square {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  background-color: purple;
+
+  animation-name: spin-big;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin-big {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+.middle-square {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(114, 101, 114);
+  animation-name: spin-middle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin-middle {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+.small-square {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(156, 156, 156);
+  animation-name: spin-small;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin-small {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
